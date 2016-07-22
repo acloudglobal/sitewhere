@@ -507,18 +507,26 @@ function swRemoveDeviceSlotForUnit(unit, slotPath) {
 /** TODO: This should be replaced by the sitewhere Leaflet library!! */
 function swInitMapForSite(map, site, tenantAuthToken, tokenToSkip, onLoaded) {
 	var lookup = site.map.metadata;
-	var latitude = (lookup.centerLatitude ? lookup.centerLatitude : 39.9853);
-	var longitude = (lookup.centerLongitude ? lookup.centerLongitude : -104.6688);
+	var latitude = (lookup.centerLatitude ? lookup.centerLatitude : 119);
+	var longitude = (lookup.centerLongitude ? lookup.centerLongitude : 31.7);
 	var zoomLevel = (lookup.zoomLevel ? lookup.zoomLevel : 10);
 	var map = map.setView([ latitude, longitude ], zoomLevel);
 	if (site.map.type === MAP_TYPE_MAPQUEST) {
-		var mapquestUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png';
-		var subDomains = [ 'otile1', 'otile2', 'otile3', 'otile4' ];
-		var mapquestAttrib = 'MapQuest data';
+		// var mapquestUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png';
+		// var subDomains = [ 'otile1', 'otile2', 'otile3', 'otile4' ];
+		// var mapquestAttrib = 'MapQuest data';
+		// var mapquest = new L.TileLayer(mapquestUrl, {
+		// 	maxZoom : 18,
+		// 	attribution : mapquestAttrib,
+		// 	subdomains : subDomains
+		// });
+		var mapquestUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGVycnkyMDA4MDg0IiwiYSI6ImNpcXhpZ2xucjAxaDdmbmtxbXdlNnRkc3EifQ.TVUdu0qrzd_AbQBD944RYQ';
 		var mapquest = new L.TileLayer(mapquestUrl, {
 			maxZoom : 18,
-			attribution : mapquestAttrib,
-			subdomains : subDomains
+            attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+            '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            id: 'mapbox.streets'
 		});
 		mapquest.addTo(map);
 	} else if (site.map.type == MAP_TYPE_GEOSERVER) {

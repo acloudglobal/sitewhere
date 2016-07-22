@@ -166,14 +166,6 @@
 	/** Reference for sites datasource */
 	var scSitesDS;
 
-	/** Available map types shown in dropdown */
-	var scMapTypes = [ {
-		text : "MapQuest World Map",
-		value : "mapquest"
-	}, {
-		text : "GeoServer Layer",
-		value : "geoserver"
-	}, ];
 
 	/** Map reference */
 	var scMap;
@@ -181,6 +173,11 @@
 	$(document)
 			.ready(
 				function() {
+					/** Available map types shown in dropdown */
+                	var scMapTypes = [ {
+                		text : i18next("public.baiduMap"),
+                		value : "mapquest"
+                	}, ];
 
 					/** Create the tab strip */
 					scTabs = $("#sc-tabs").kendoTabStrip({
