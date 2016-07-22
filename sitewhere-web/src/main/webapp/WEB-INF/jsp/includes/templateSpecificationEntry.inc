@@ -82,7 +82,7 @@
 			<p class="ellipsis sw-spec-list-entry-subhead">
 				<span class="sw-spec-list-entry-label" style="min-width: 50px;">#= i18next("public.Asset") #:</span><span title="#:asset.name#">#:asset.name# (SKU: #:asset.sku#)</span></p>
 			<p class="ellipsis sw-spec-list-entry-subhead">
-				<span class="sw-spec-list-entry-label" style="min-width: 50px;">Token:</span><span title="#:token#">#:token#</span></p>
+				<span class="sw-spec-list-entry-label" style="min-width: 50px;">#= i18next("public.token") #:</span><span title="#:token#">#:token#</span></p>
 			<p class="ellipsis sw-spec-list-entry-subhead">
 				<span class="sw-spec-list-entry-label" style="min-width: 50px;">#= i18next("includes.Desc") #:</span><span title="#:asset.description#">#:asset.description#</span></p>
 		</div>

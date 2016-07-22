@@ -88,12 +88,12 @@
 		</div>
 		<div>
 			<div>
-				<span class="sw-assignment-header-label" title="#= i18next("includes.i18next.UAT") #">Token:</span>
+				<span class="sw-assignment-header-label" title="#= i18next("includes.i18next.UAT") #">#= i18next("assignments.detail.token") #:</span>
 				<span title="#:token#">#:token#</span>
 			</div>
 # if (data.associatedPerson) { #
 			<div>
-				<span class="sw-assignment-header-label" title="Assigned person">Assigned Person:</span>
+				<span class="sw-assignment-header-label" title="#= i18next("includes.i18next.AssignedPerson") #">#= i18next("includes.i18next.AssignedPerson") #:</span>
 				<span title="#:associatedPerson.name#">#:associatedPerson.name#</span>
 			</div>
 # } else if (data.associatedHardware) { #

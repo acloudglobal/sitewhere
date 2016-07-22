@@ -66,7 +66,7 @@
 	function onAssetDeleteClicked(e, assetId) {
 		var event = e || window.event;
 		event.stopPropagation();
-		swConfirm("Delete Asset", "Are you sure you want to delete this asset?", function(result) {
+		swConfirm(i18next("public.DeleteUser"), i18next("includes.commonFunctions.AYSYWTDTA"), function(result) {
 			if (result) {
 				$.deleteJSON("${pageContext.request.contextPath}/api/assets/categories/" + categoryId
 						+ "/assets/" + assetId + "?tenantAuthToken=${tenant.authenticationToken}",

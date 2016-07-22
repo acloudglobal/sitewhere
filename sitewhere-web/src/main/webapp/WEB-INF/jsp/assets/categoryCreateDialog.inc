@@ -19,7 +19,7 @@
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label" for="cc-category-name" data-i18n="public.CategoryId">Category
+						<label class="control-label" for="cc-category-name" data-i18n="public.CategoryName">Category
 							Name</label>
 						<div class="controls">
 							<input type="text" id="cc-category-name" title="Category Name" class="input-xlarge">
@@ -60,16 +60,16 @@
 
 					/** Available asset types shown in dropdown */
 					var ccAssetTypes = [ {
-						text : "Device",
+						text : i18next("public.Device"),
 						value : "Device"
 					}, {
-						text : "Hardware",
+						text : i18next("public.hardware"),
 						value : "Hardware"
 					}, {
-						text : "Person",
+						text : i18next("public.person"),
 						value : "Person"
 					}, {
-						text : "Location",
+						text : i18next("public.Location"),
 						value : "Location"
 					}, ];
 
@@ -156,7 +156,7 @@
 		$('#cc-init-category-id').val("");
 		$('#cc-category-id-row').show();
 
-		$('#cc-dialog-header').html(i18next("public.Create") + " Asset Category");
+		$('#cc-dialog-header').html(i18next("includes.CreateAssetCategory"));
 		$('#cc-dialog-submit').html(i18next("public.Create"));
 
 		$('#cc-category-id').val("");
@@ -187,7 +187,7 @@
 		$('#cc-init-category-id').val(data.id);
 		$('#cc-category-id-row').hide();
 
-		$('#cc-dialog-header').html(i18next("public.Update") + " Asset Category");
+		$('#cc-dialog-header').html(i18next("includes.UpdateAssetCategory"));
 		$('#cc-dialog-submit').html(i18next("public.Update"));
 
 		ccTabs.select(0);

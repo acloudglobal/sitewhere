@@ -51,11 +51,11 @@
 		</div>
 		<div>
 			<div>
-				<span class="sw-site-header-label" title="Unique site token">Token:</span>
+				<span class="sw-site-header-label" title="Unique site token">#= i18next("public.Name") #:</span>
 				<span title="#:token#">#:token#</span>
 			</div>
 			<div>
-				<span class="sw-site-header-label" title="Name">Name:</span>
+				<span class="sw-site-header-label" title="Name">#= i18next("sites.detail.Token") #:</span>
 				<span title="#:name#">#:name#</span>
 			</div>
 			<div>

@@ -154,9 +154,9 @@
 # } else { #
 		<div class="sw-device-list-entry-no-assignment">
     		<div class="alert alert-info">
-    			<p>Device is not currently assigned.</p>
+    			<p>#= i18next("devices.list.DeviceCurrentNotAssignment") #:</p>
 				<a class="btn" title="Assign Device" href="javascript:void(0)" 
-					onclick="acOpen(event, '#:hardwareId#', onAssignmentAdded)" style="margin-top: -4px;">Assign Device</a>
+					onclick="acOpen(event, '#:hardwareId#', onAssignmentAdded)" style="margin-top: -4px;">#= i18next("devices.list.DeviceAssignment") #</a>
 			</div>
 		</div>
 # } #

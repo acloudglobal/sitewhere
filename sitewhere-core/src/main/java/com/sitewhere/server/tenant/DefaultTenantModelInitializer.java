@@ -38,8 +38,10 @@ public class DefaultTenantModelInitializer implements ITenantModelInitializer {
 	public static final String DEFAULT_TENANT_NAME = "Default Tenant";
 
 	/** Default tenant logo URL */
+	//public static final String DEFAULT_TENANT_LOGO =
+	//		"https://s3.amazonaws.com/sitewhere-demo/sitewhere-small.png";
 	public static final String DEFAULT_TENANT_LOGO =
-			"https://s3.amazonaws.com/sitewhere-demo/sitewhere-small.png";
+			"/resources/sitewhere-small.png";
 
 	/** Default tenant auth token */
 	public static final String DEFAULT_TENANT_TOKEN = "sitewhere1234567890";

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="sw-body">
 <head>
-<title>SiteWhere - <c:out value="${sitewhere_title}" /></title>
+<title>Acloud - <c:out value="${sitewhere_title}" /></title>
 <script src="${pageContext.request.contextPath}/scripts/jquery-1.11.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/scripts/jquery-ui.min.js"></script>
 <script src="${pageContext.request.contextPath}/scripts/jquery.validity.js"></script>
@@ -52,14 +52,17 @@
 		<div class="k-content container sw-content">
 			<div class="sw-header">
 				<div class="sw-logo">
+				    <!-- todo
 					<c:choose>
 						<c:when test="${tenant != null}">
 							<img src="${tenant.logoUrl}" />
 						</c:when>
 						<c:otherwise>
-							<img src="https://s3.amazonaws.com/sitewhere-demo/sitewhere-small.png" />
+							<img src="${pageContext.request.contextPath}/img/sitewhere-small.png" />
 						</c:otherwise>
 					</c:choose>
+					-->
+					<img src="${pageContext.request.contextPath}/img/sitewhere-small.png" />
 				</div>
 				<div class="sw-main-nav">
 					<c:if test="${tenant != null}">
@@ -68,11 +71,11 @@
 								<c:choose>
 									<c:when test="${sitewhere_section == 'server'}">
 										<li class="active"><a href="${pageContext.request.contextPath}/admin/server.html"
-											data-i18n="public.Server">Server</a></li>
+											data-i18n="public.Server"></a></li>
 									</c:when>
 									<c:otherwise>
 										<li><a href="${pageContext.request.contextPath}/admin/server.html"
-											data-i18n="public.Server">Server</a></li>
+											data-i18n="public.Server"></a></li>
 									</c:otherwise>
 								</c:choose>
 							</c:if>

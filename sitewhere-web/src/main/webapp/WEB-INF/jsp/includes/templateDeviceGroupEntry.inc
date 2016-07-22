@@ -80,7 +80,7 @@
 		<div>
 			<p class="sw-groups-list-entry-heading ellipsis"><span title="#:name#">#:name#</span></p>
 			<p class="ellipsis sw-groups-list-entry-subhead">
-				<span class="sw-groups-list-entry-label" style="min-width: 50px;">Token:</span><span title="#:token#">#:token#</span></p>
+				<span class="sw-groups-list-entry-label" style="min-width: 50px;">#= i18next("public.token") #:</span><span title="#:token#">#:token#</span></p>
 			<p class="ellipsis sw-groups-list-entry-subhead">
 				<span class="sw-groups-list-entry-label" style="min-width: 50px;">#= i18next("includes.Desc") #:</span><span title="#:description#">#:description#</span></p>
 			<p class="ellipsis sw-groups-list-entry-subhead">

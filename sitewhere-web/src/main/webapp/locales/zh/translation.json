@@ -70,6 +70,8 @@
     "Cancel":"取消",
     "Close":"关闭",
     "Value":"值",
+    "Server":"服务器",
+    "server":"服务器",
     "Site":"站点",
     "Deployed": "部署",
     "DeployedSite": "$t(public.Deployed)$t(public.Site)",
@@ -89,9 +91,9 @@
     "Specification":"规格",
     "Specifications":"$t(public.Specification)",
     "Batch":"批量",
-    "Assets":"Assets",
+    "Assets":"资产",
     "Failed":"失败",
-    "this":"这",
+    "this":"这个",
     "Asset":"资产",
     "Role":"角色",
     "Roles":"$t(public.Role)",
@@ -130,7 +132,36 @@
     "msg":{
        "areyousure":"您确定要",
        "delete":"删除"
-    }
+    },
+    "token":"令牌",
+    "Token":"令牌",
+    "person":"人员",
+    "Categorie":"类别",
+    "CategoryId":"$t(public.Categorie)标识符",
+    "CategoryName":"$t(public.Categorie)$t(public.Name)",
+    "AssetType":"$t(public.Categorie)$t(public.Type)",
+    "Schedule":"计划",
+    "Schedules":"$t(public.Schedule)",
+    "ScheduledJobs":"$t(public.Schedule)任务",
+    "AddNew":"新增",
+    "AssetDetails":"$t(public.Asset)$t(public.Details)",
+    "Properties":"属性",
+    "AssetId":"ID",
+    "AssetName":"$t(public.Name)",
+    "AssetImageUrl":"图片URL",
+    "AssetSku":"SKU",
+    "AssetDescription":"$t(public.Description)",
+    "AssetUsername":"$t(public.User)$t(public.name)",
+    "AssetEmail":"$t(public.Email)",
+    "AssetLatitude":"$t(public.Latitude)",
+    "AssetLongitude":"$t(public.Longitude)",
+    "AssetElevation":"$t(public.Elevation)",
+    "Simple":"简单",
+    "Cron":"Cron",
+    "Interval":"间隔",
+    "Milliseconds":"毫秒",
+    "Repeat":"重复",
+    "DeleteSchedule":"$t(public.Delete)$t(public.Schedules)"
   },
   "includes":{
        "Desc":"$t(public.Description)",
@@ -171,7 +202,7 @@
           "Select":"选择"
        },
        "deviceFilterDialog":{
-          "ApplyFilter":"申请过滤"
+          "ApplyFilter":"应用过滤"
        },
        "assignmentCreateDialog":{
           "Assign":"关联"
@@ -204,6 +235,7 @@
           "AssignedHardware":"$t(public.Assigned)硬件",
           "Assignedhardware":"$t(public.Assigned)硬件",
           "AssignedDevice":"$t(public.Assigned)$t(public.device)",
+          "AssignedPerson":"$t(public.Assigned)$t(public.person)",
           "DUBA":"用于关联设备",
           "DDWLU":"设备最后更新日期",
           "DAWLU":"关联最后更新日期",
@@ -281,7 +313,8 @@
           "UTMAAM":"$t(public.Unable)标注$t(public.assignment)$t(includes.Missing)",
           "UTDZ":"$t(public.Unable)$t(public.msg.delete)区",
           "AYSYWTDTZ":"$t(public.msg.areyousure)$t(public.msg.delete)$t(public.this)区吗?",
-          "UTDDG":"$t(public.Unable)$t(public.msg.delete)$t(public.device)$t(public.group)"
+          "UTDDG":"$t(public.Unable)$t(public.msg.delete)$t(public.device)$t(public.group)",
+          "AYSYWTDTA":"$t(public.msg.areyousure)$t(public.msg.delete)$t(public.this)$t(public.Asset)"
        },
        "specificaationCreateDialog":{
           "CreateSpecification":"$t(public.Create)$t(public.Specification)",
@@ -301,7 +334,11 @@
           "CenterLongitude":"$t(includes.Center)$t(public.Longitude)",
           "ZoomLevel":"$t(includes.Zoom)级别",
           "CLAZOM":"选择位置和缩放地图"
-       }
+       },
+        "CreateAssetCategory":"$t(public.Create)$t(public.Asset)$t(public.Categorie)",
+        "AssetCategoryDetails":"$t(public.Categorie)$t(public.Details)",
+        "UpdateAssetCategory":"$t(public.Update)$t(public.Asset)$t(public.Categorie)",
+        "DeleteAssetCategory":"$t(public.Delete)$t(public.Asset)$t(public.Categorie)"
   },
   "batch":{
        "ProcessingStatus":"$t(batch.list.Processing)$t(public.Status)",
@@ -323,7 +360,8 @@
           "EmulateAssignment":"模拟$t(public.Assignment)",
           "DeviceCommandInvocations":"$t(public.Device)$t(public.Command)操作",
           "InvokeCommand":"操作$t(public.Command)",
-          "Target":"目标"
+          "Target":"目标",
+          "token":"$t(public.token)"
        },
        "emulator":{
           "title":"$t(public.Assignment)$t(public.Emulator)",
@@ -355,12 +393,15 @@
         "title":"$t(public.View)$t(public.Device)",
         "AssignmentHistory":"历史$t(public.Assignment)",
         "DeviceAssignmentHistory":"$t(public.Device)$t(public.Assignment)的历史记录",
-        "AssignDevice":"$t(public.Device)关联"
+        "AssignDevice":"$t(public.Device)关联",
+        "DeviceNotAssignment":"$t(public.Device)没有$t(public.Assignment)"
      },
      "list":{
         "title":"$t(public.Manage)$t(public.Devices)",
         "BatchCommand":"批量$t(public.Command)",
-        "AddNewDevice":"$t(public.Add)$t(public.New)$t(public.Device)"
+        "AddNewDevice":"$t(public.Add)$t(public.New)$t(public.Device)",
+        "DeviceCurrentNotAssignment":"$t(public.Device)当前没有$t(public.Assignment)",
+        "DeviceAssignment":"$t(public.Assignment)$t(public.Device)"
      }
   },
   "groups":{
@@ -393,7 +434,7 @@
           "Location":"位置",
           "ReceivedDate":"接收$t(public.Date)",
           "AddNewZone":"$t(public.Add)$t(public.New)$t(public.Zone)",
-          "Token":"令牌"
+          "Token":"$t(public.token)"
       },
       "list":{
           "title":"$t(public.Manage)$t(public.Sites)",
@@ -437,5 +478,48 @@
   },
   "error":{
       "title":"页面加载错误"
+  },
+  "server":{
+      "title":"服务器信息"
+  },
+  "assets":{
+      "list":{
+        "title":"$t(public.Manage)$t(public.Asset)$t(public.Categorie)",
+        "addNewCategorie":"$t(public.Add)$t(public.New)$t(public.Asset)$t(public.Categorie)"
+      },
+      "dialog":{
+        "deleteAsset":"$t(public.Delete)$t(public.Asset)"
+      }
+  },
+  "assetCategories":{
+      "list":{
+          "AddNew":"$t(public.Add)$t(public.New)$t(public.Asset)$t(public.Categorie)",
+          "AYSD":"$t(public.msg.areyousure)$t(public.msg.delete)$t(public.Asset)$t(public.Categorie)"
+      },
+      "dialog":{
+          "HardwareCreateTitle":"$t(public.Create)$t(public.hardware)$t(public.Asset)",
+          "HardwareUpdateTitle":"$t(public.Update)$t(public.hardware)$t(public.Asset)",
+          "PersonCreateTitle":"$t(public.Create)$t(public.peson)$t(public.Asset)",
+          "PersonUpdateTitle":"$t(public.Update)$t(public.person)$t(public.Asset)",
+          "LocationCreateTitle":"$t(public.Create)$t(public.Location)$t(public.Asset)",
+          "LocationUpdateTitle":"$t(public.Update)$t(public.Location)$t(public.Asset)"
+      }
+  },
+  "schedules": {
+    "list": {
+      "AddNewSchedule":"$t(public.Add)$t(public.New)$t(public.Schedules)",
+      "AYSDTS":"$t(public.msg.areyousure)$t(public.msg.delete)$t(public.this)$t(public.Schedules)"
+    },
+    "create": {
+      "title":"$t(public.Create)$t(public.Schedules)",
+      "detailsTab":"$t(public.Schedules)$t(public.Details)",
+      "simpleSchedule":"$t(public.Simple)$t(public.Schedules)",
+      "cronSchedule":"$t(public.Cron)$t(public.Schedules)",
+      "simpleInterval":"$t(public.Interval)($t(public.Milliseconds))",
+      "simpleRepeat":"$t(public.Repeat)"
+    },
+    "update": {
+      "title":"$t(public.Update)$t(public.Schedules)"
+    }
   }
 }

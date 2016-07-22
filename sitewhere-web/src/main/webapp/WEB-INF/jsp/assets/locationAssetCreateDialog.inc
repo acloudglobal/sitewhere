@@ -270,7 +270,7 @@
 		$('#ac-init-asset-id').val("");
 		$('#ac-asset-id-row').show();
 
-		$('#ac-dialog-header').html(i18next("public.Create") + " Location Asset");
+		$('#ac-dialog-header').html(i18next("assetCategories.dialog.LocationCreateTitle"));
 		$('#ac-dialog-submit').html(i18next("public.Create"));
 
 		$('#ac-asset-id').val("");
@@ -309,7 +309,7 @@
 
 		$('#ac-general-form')[0].reset();
 
-		$('#ac-dialog-header').html(i18next("public.Update") + " Location Asset");
+		$('#ac-dialog-header').html(i18next("assetCategories.dialog.LocationUpdateTitle"));
 		$('#ac-dialog-submit').html(i18next("public.Update"));
 
 		acTabs.select(0);

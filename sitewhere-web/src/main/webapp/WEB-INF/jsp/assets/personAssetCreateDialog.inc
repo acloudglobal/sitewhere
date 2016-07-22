@@ -246,7 +246,7 @@
 		$('#ac-init-asset-id').val("");
 		$('#ac-asset-id-row').show();
 
-		$('#ac-dialog-header').html(i18next("public.Create") + " Person Asset");
+		$('#ac-dialog-header').html(i18next("assetCategories.dialog.PersonCreateTitle"));
 		$('#ac-dialog-submit').html(i18next("public.Create"));
 
 		$('#ac-asset-id').val("");
@@ -284,7 +284,7 @@
 
 		$('#ac-general-form')[0].reset();
 
-		$('#ac-dialog-header').html(i18next("public.Update") + " Person Asset");
+		$('#ac-dialog-header').html(i18next("assetCategories.dialog.PersonUpdateTitle"));
 		$('#ac-dialog-submit').html(i18next("public.Update"));
 
 		acTabs.select(0);
