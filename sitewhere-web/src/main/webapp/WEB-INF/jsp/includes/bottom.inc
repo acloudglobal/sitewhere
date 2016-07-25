@@ -6,7 +6,7 @@
 				${version.versionIdentifier}.${version.buildTimestamp} (${version.editionIdentifier})
 			</span>
 			-->
-			Copyright 2009-2016 Acloud Info Tech Co.Ltd.
+			Copyright 2014-2016 Acloud Info Tech Co.Ltd.
 		</div>
 	</div>
 <script src="${pageContext.request.contextPath}/scripts/bootstrap.min.js"></script>

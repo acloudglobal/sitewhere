@@ -162,7 +162,7 @@
     "Milliseconds":"毫秒",
     "Repeat":"重复",
     "DeleteSchedule":"$t(public.Delete)$t(public.Schedules)",
-    "baiduMap":"百度地图"
+    "baiduMap":"OSM"
   },
   "includes":{
        "Desc":"$t(public.Description)",

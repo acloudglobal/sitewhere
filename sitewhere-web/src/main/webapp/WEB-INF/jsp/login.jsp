@@ -93,16 +93,20 @@ sitewhere_i18next.sitewhere_title = "login.title";
 					</form>
 				</div>
 			</div>
+			<!--
 			<div class="alert alert-info" style="width: 550px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 10px;">
 				 <font data-i18n="login.msg"></font><b> admin</b>:<b>password</b>.
 			</div>
+			-->
 		</div>
 		<div style="height: 10px;"></div>
 		<div class="sw-footer">
+			<!--
 			<span style="position: absolute; right: 10px; color: #999;">
 				${version.versionIdentifier}.${version.buildTimestamp} (${version.editionIdentifier})
 			</span>
-			Copyright  2009-2016 Acloud Info Tech Co.Ltd.
+			-->
+			Copyright  2014-2016 Acloud Info Tech Co.Ltd.
 		</div>
 	</div>
 </body>

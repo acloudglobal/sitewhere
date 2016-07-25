@@ -92,7 +92,7 @@
 							<c:choose>
 								<c:when test="${sitewhere_section == 'devices'}">
 									<li class="active dropdown"><a class="dropdown-toggle"
-										style="background-color: #dc0000" href="javascript:void(0);"
+										style="background-color: #428BCA" href="javascript:void(0);"
 										data-i18n="[prepend]public.Devices" data-toggle="dropdown"> <span class="caret"></span>
 									</a>
 										<ul class="dropdown-menu">
@@ -142,7 +142,7 @@
 							<c:choose>
 								<c:when test="${sitewhere_section == 'schedules'}">
 									<li class="active dropdown"><a class="dropdown-toggle"
-										style="background-color: #dc0000" href="javascript:void(0);"
+										style="background-color: #428BCA" href="javascript:void(0);"
 										data-i18n="[prepend]public.Schedules" data-toggle="dropdown"> <span class="caret"></span>
 									</a>
 										<ul class="dropdown-menu">
@@ -195,10 +195,12 @@
 									<li class="divider"></li>
 								</c:when>
 							</c:choose>
+							<!--
 							<li><a href="http://www.sitewhere.org" target="_blank">SiteWhere Website</a></li>
 							<li><a href="http://documentation.sitewhere.org/userguide/adminui/adminui.html"
 								target="_blank">Documentation</a></li>
 							<li class="divider"></li>
+							-->
 							<li><a tabindex="-1" href="<c:url value="/logout"/>" data-i18n="includes.top.LogOut"></a></li>
 						</ul>
 					</div>
