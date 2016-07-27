@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="sw-body">
 <head>
-<title>SiteWhere - Login</title>
+<title>Acloud - Login</title>
 <script src="${pageContext.request.contextPath}/scripts/jquery-1.11.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/scripts/jquery.validity.js"></script>
 <script src="${pageContext.request.contextPath}/scripts/kendo.web.min.js"><script>
