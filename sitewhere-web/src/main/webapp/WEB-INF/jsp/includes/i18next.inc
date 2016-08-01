@@ -32,6 +32,9 @@
 		lng = "dev";
 	}
 
+	// set default language zh
+	lng = "zh";
+
 	/** I18n init */
 	$(function() {
 		i18nInit();
