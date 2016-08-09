@@ -500,7 +500,7 @@
       "dialog":{
           "HardwareCreateTitle":"$t(public.Create)$t(public.hardware)$t(public.Asset)",
           "HardwareUpdateTitle":"$t(public.Update)$t(public.hardware)$t(public.Asset)",
-          "PersonCreateTitle":"$t(public.Create)$t(public.peson)$t(public.Asset)",
+          "PersonCreateTitle":"$t(public.Create)$t(public.person)$t(public.Asset)",
           "PersonUpdateTitle":"$t(public.Update)$t(public.person)$t(public.Asset)",
           "LocationCreateTitle":"$t(public.Create)$t(public.Location)$t(public.Asset)",
           "LocationUpdateTitle":"$t(public.Update)$t(public.Location)$t(public.Asset)"

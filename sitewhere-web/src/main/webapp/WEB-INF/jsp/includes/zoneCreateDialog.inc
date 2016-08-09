@@ -272,7 +272,7 @@
 		zcSubmitCallback = callback;
 
 		// Asyncronously load zones and add layer to map.
-		$.getJSON("/sitewhere/api/zones/" + zoneToken + "?tenantAuthToken=${tenant.authenticationToken}",
+		$.getJSON("/api/zones/" + zoneToken + "?tenantAuthToken=${tenant.authenticationToken}",
 			zuOpenGetSuccess, function(jqXHR, textStatus, errorThrown) {
 				handleError(jqXHR, "Unable to get zone for update.");
 			});

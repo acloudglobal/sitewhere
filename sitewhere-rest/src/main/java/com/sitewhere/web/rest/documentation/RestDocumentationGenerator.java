@@ -450,7 +450,7 @@ public class RestDocumentationGenerator {
 			throw new SiteWhereException("Spring RequestMapping annotation missing on documented controller: "
 					+ controller.getName());
 		}
-		parsed.setBaseUri("/sitewhere/api" + mapping.value()[0]);
+		parsed.setBaseUri("/api" + mapping.value()[0]);
 
 		// Verify controller markdown file.
 		File markdownFile = new File(resourcesFolder, parsed.getResource() + ".md");

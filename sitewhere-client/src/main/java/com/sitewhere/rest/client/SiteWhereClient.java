@@ -90,7 +90,7 @@ import com.sitewhere.spi.device.request.IDeviceAssignmentCreateRequest;
 public class SiteWhereClient implements ISiteWhereClient {
 
 	/** Default base url for calling REST services */
-	public static final String DEFAULT_BASE_URL = "http://localhost:8080/sitewhere/api/";
+	public static final String DEFAULT_BASE_URL = "http://localhost:8080/api/";
 
 	/** Default REST username */
 	public static final String DEFAULT_USERNAME = "admin";

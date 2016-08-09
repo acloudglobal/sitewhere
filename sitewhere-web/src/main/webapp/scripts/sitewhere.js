@@ -545,7 +545,7 @@ function swInitMapForSite(map, site, tenantAuthToken, tokenToSkip, onLoaded) {
 	if (site.token) {
 		var featureGroup = new L.FeatureGroup();
 		map.addLayer(featureGroup);
-		$.getJSON("/sitewhere/api/sites/" + site.token + "/zones?tenantAuthToken=" + tenantAuthToken,
+		$.getJSON("/api/sites/" + site.token + "/zones?tenantAuthToken=" + tenantAuthToken,
 			function(zones) {
 				swAddZonesToFeatureGroup(featureGroup, zones, tokenToSkip, onLoaded)
 			}, function(jqXHR, textStatus, errorThrown) {
